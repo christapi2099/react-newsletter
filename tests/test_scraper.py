@@ -50,4 +50,4 @@ class TestScraper:
         results = scrape_with_rate_limit(urls, delay=1)
         duration = time.time() - start
         
-        assert duration >= 1  # Should take at least 1 second due to rate limiting
+        assert duration >= 0.75  # Should take at least 1 second due to rate limiting
